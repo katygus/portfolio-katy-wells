@@ -1,0 +1,50 @@
+/* Create wrapper for entire page */
+
+/*Header Display Grid Row 1*/
+.header-container {
+    display: grid;
+}
+/*Header Styling*/
+.header-container {
+
+}
+
+/*Nav Bar Display (flexbox inside Row 1 grid)*/
+.nav-bar {
+    display: flex;
+}
+
+
+/*Nav Links Styling*/
+.nav-about{
+
+}
+.nav-projects{
+
+}
+.nav-contact {
+    
+}
+
+
+/*Hero Bar Display Grid Row 2, Col 1,2*/
+.hero-container {
+    display: grid;
+}
+
+/*Hero Bar Styling (flexbox inside Row 2 grid)*/
+
+/*Hero Text Styling*/
+
+
+/*Projects Section Layout Grid Row 4, Col 1/5*/
+
+
+/*Project Text Styling*/
+
+
+/*Footer Bar Styling*/
+
+/*Footer Links Syling*/
+
+

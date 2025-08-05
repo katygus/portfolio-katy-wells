@@ -37,7 +37,10 @@
 /*Nav Bar Display */
 
 .nav-bar {
-    color: var(--color-background)
+    color: var(--color-background);
+    display: flex;
+    justify-content: space-between;
+    
 
 }
 

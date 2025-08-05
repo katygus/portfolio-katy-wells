@@ -1,22 +1,49 @@
-/* Create wrapper for entire page */
 
-/*Header Display Grid Row 1*/
-.header-container {
-    display: grid;
+:root {
+--color-background: #f4f9e9;
+--color-body-text: #725d68;
+--color-header-footer: #40476d;
+--color-hero: #001524;
+--color-cta-buttons: #18a999;
+--color-cta-highlights: #18a999;
+--color-accent:#a59132;
 }
+
+
+/* Create wrapper for entire page */
+.wrapper {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: sans-serif;
+  padding: 5%
+}
+
+/*Header Display*/
+.header-container {
+   display: flex;
+   flex-direction: row; 
+   justify-content: center;
+
+   
+}
+
 /*Header Styling*/
 .header-container {
+    background-color: var(--color-header-footer);
+    color: var(--color-background);
 
 }
 
-/*Nav Bar Display (flexbox inside Row 1 grid)*/
+/*Nav Bar Display */
+
 .nav-bar {
-    display: flex;
-}
+    color: var(--color-background)
 
+}
 
 /*Nav Links Styling*/
 .nav-about{
+    
 
 }
 .nav-projects{
@@ -29,22 +56,77 @@
 
 /*Hero Bar Display Grid Row 2, Col 1,2*/
 .hero-container {
-    display: grid;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.hero-container {
+    background-color: var(--color-hero);
+    color: var(--color-background);
+    border-radius: 20%;
+    width: 100%;
+    padding: 50px;
 }
 
-/*Hero Bar Styling (flexbox inside Row 2 grid)*/
-
+/*Hero Bar Elements Styling */
+.hero-elements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
 /*Hero Text Styling*/
+.hero-elements h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: xx-large;
+    
 
+}
+
+.hero-elements h3{
+
+}
+
+/* Call To Action Styling */
+.cta {
+
+}
 
 /*Projects Section Layout Grid Row 4, Col 1/5*/
+.projects-container {
+    display: grid;
+    grid-area: 
+}
 
+/*Project Elements Styling*/
+#project1 {
 
+}
+#project2 {
+
+}
+#project3 {
+
+}
 /*Project Text Styling*/
+#project1 {
 
+}
+#project2 {
+
+}
+#project3 {
+    
+}
 
 /*Footer Bar Styling*/
-
+.footer-container {
+    background-color: var(--color-header-footer);
+    color: var(--color-background);
+}
 /*Footer Links Syling*/
-
-
+.social-links {
+    color: var(--color-background)
+}

@@ -11,51 +11,43 @@
 
 
 /* Create wrapper for entire page */
+
 .wrapper {
   background-color: var(--color-background);
   color: var(--color-text);
   font-family: sans-serif;
-  padding: 5%
-}
-
-/*Header Display*/
-.header-container {
-   display: flex;
-   flex-direction: row; 
-   justify-content: center;
-
-   
+  line-height: 2;
+  padding: 8%
 }
 
 /*Header Styling*/
 .header-container {
     background-color: var(--color-header-footer);
     color: var(--color-background);
-
+    padding: 10px;
+    /*some box decoration*/
 }
 
 /*Nav Bar Display */
-
 .nav-bar {
-    color: var(--color-background);
     display: flex;
-    justify-content: space-between;
-    
-
+    justify-content: center;
+    align-items: stretch;
+    justify-content: space-evenly;
+    height: 20px;
 }
 
 /*Nav Links Styling*/
-.nav-about{
-    
-
+a:link {
+    text-decoration: none;
+    color: var(--color-background);
 }
-.nav-projects{
-
+a:visited {
+    color: var(--color-cta-buttons);
 }
-.nav-contact {
-    
+a:hover {
+    color: var(--color-accent);
 }
-
 
 /*Hero Bar Display Grid Row 2, Col 1,2*/
 .hero-container {
@@ -129,6 +121,11 @@
     background-color: var(--color-header-footer);
     color: var(--color-background);
 }
+/* Footer Layout */
+.footer-container{
+    display: grid 1 / 4 / 6 / 5;
+}
+
 /*Footer Links Syling*/
 .social-links {
     color: var(--color-background)

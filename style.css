@@ -135,6 +135,10 @@ a:hover {
     position: relative;
     display: inline-block;
 }
+#project1 .dropdown-content {
+    display: none;
+    background-color: transparent;
+}
 
 #project2 {
     background-color: transparent;

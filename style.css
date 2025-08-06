@@ -7,6 +7,7 @@
 --color-cta-buttons: #18a999;
 --color-cta-highlights: #18a999;
 --color-accent:#a59132;
+--color-white-text: #f4f9e9;
 }
 
 
@@ -15,7 +16,7 @@
 .wrapper {
   background-color: var(--color-hero);
     background-image: linear-gradient var(--color-hero) var(--color-header-footer);
-  color: var(--color-text);
+  color: var(--color-white-text);
   font-family: sans-serif;
   line-height: 2;
   padding: 8%
@@ -40,14 +41,13 @@
 }
 
 /*Nav Links Styling*/
-/*a:link {
-    text-decoration: none;
-    color: var(--color-background);
-}
-*/
 a:link {
     text-decoration: none;
-    color: var(--color-background);
+    color: var(--color-white-text);
+}
+
+a:visited {
+    color: var(--color-white-text);
 }
 a:hover {
     color: var(--color-cta-buttons);
@@ -80,20 +80,33 @@ a:hover {
 }
 
 /* Call To Action Styling */
-.cta {
+#contact-me {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-end;
+}
+.email-button {
+    background-color: transparent;
+    border: 1px solid var(--color-accent);
+    color: var(--color-white-text);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px var(--color-cta-buttons) ;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+.email-button:hover {
+    transform: scale(1.2);
 }
 
 /*Projects Section Layout Grid Row 4, Col 1/5*/
-.projects-container {
+#projects-container {
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
    column-gap: 2em;
-    
-    
-   
 }
 
 /*Project Elements Styling*/
@@ -117,6 +130,10 @@ a:hover {
     padding: 20px;
 }
 
+/* About Me Section*/
+#bio {
+
+}
 /*Footer Bar Styling*/
 .footer-container {
     background-color: var(--color-hero      );
@@ -131,6 +148,9 @@ a:hover {
     justify-content: space-around;
     height: 20px; 
 }
+
+/* About Section Styling - padding, first words larger, maybe grid with some images of other stuff I've made??*/
+
 
 /*Footer Links Syling*/
 /* this link to use social media icons https://www.w3schools.com/howto/howto_css_social_media_buttons.asp */

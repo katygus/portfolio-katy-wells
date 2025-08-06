@@ -40,15 +40,17 @@
 }
 
 /*Nav Links Styling*/
+/*a:link {
+    text-decoration: none;
+    color: var(--color-background);
+}
+*/
 a:link {
     text-decoration: none;
     color: var(--color-background);
 }
-a:visited {
-    color: var(--color-cta-buttons);
-}
 a:hover {
-    color: var(--color-accent);
+    color: var(--color-cta-buttons);
     font-size: larger;
 }
 
@@ -117,7 +119,7 @@ a:hover {
 
 /*Footer Bar Styling*/
 .footer-container {
-    background-color: var(--color-hero);
+    background-color: var(--color-hero      );
     color: var(--color-background);
 }
 /* Footer Layout */

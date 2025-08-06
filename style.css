@@ -131,14 +131,7 @@ a:hover {
     text-align: center;
     padding: 20px;
 }
-#project1 .dropdown {
-    position: relative;
-    display: inline-block;
-}
-#project1 .dropdown-content {
-    display: none;
-    background-color: transparent;
-}
+
 
 #project2 {
     background-color: transparent;

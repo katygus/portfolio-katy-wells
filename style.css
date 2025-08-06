@@ -107,26 +107,30 @@ a:hover {
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
    column-gap: 2em;
+   
 }
 
 /*Project Elements Styling*/
 #project1 {
-    background-color: var(--color-body-text);
-    border-radius: 20%;
-    color: var(--color-background);
+    background-color: transparent;
+    border: 1px solid var(--color-accent);
+    color: var(--color-white-text);
+    text-align: center;
     padding: 20px;
-
 }
+
 #project2 {
-    background-color: var(--color-body-text);
-    border-radius: 20%;
-    color: var(--color-background);
+    background-color: transparent;
+    border: 1px solid var(--color-accent);
+    color: var(--color-white-text);
+    text-align: center;
     padding: 20px;
 }
 #project3 {
-    background-color: var(--color-body-text);
-    border-radius: 20%;
-    color: var(--color-background);
+    background-color: transparent;
+    border: 1px solid var(--color-accent);
+    color: var(--color-white-text);
+    text-align: center;
     padding: 20px;
 }
 

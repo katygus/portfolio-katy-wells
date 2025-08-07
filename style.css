@@ -86,12 +86,12 @@ a:hover {
     background-color: var(--color-hero);
     background-image: linear-gradient(var(--color-header-footer), var(--color-hero));
     color: var(--color-background);
-    padding: 4em;  
+    padding: 2em;  
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
-    gap: 11em;
+    gap: 6em;
 }
 
 #contact-me {
@@ -216,7 +216,10 @@ a:hover {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+}
 
+.bigger-words{
+    font-size: 1.5em;
 }
 /*Footer Bar Styling*/
 .footer-container {

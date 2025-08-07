@@ -1,6 +1,21 @@
 
 
+.lexend-exa {
+  font-family: "Lexend Exa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
 
+.lexend {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+ body {
+    font-family: "Lexend", sans-serif;
+ }
 
 :root {
 --color-background: #f4f9e9;
@@ -13,12 +28,10 @@
 --color-white-text: #f4f9e9;
 }
 
-
-
 /* Create wrapper for entire page */
-html {
+/* html {
     font-size: 16px;
-}
+} */
 .wrapper {
   background-color: var(--color-hero);
     background-image: linear-gradient var(--color-hero) var(--color-header-footer);

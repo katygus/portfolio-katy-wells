@@ -89,13 +89,21 @@ a:hover {
     gap: 11em;
 }
 
-.hero-container img{
-    width: 30%;
+#contact-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-me img {
+    width: 100%;
     height: auto;
+    margin: 20%;
 }
 
 .hero-text{
-    width: 80%;
+    width: 60%;
     flex-direction: column;
 }
 
@@ -112,11 +120,7 @@ a:hover {
 
 
 /* Call To Action Styling */
-#contact-me {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-}
+
 .email-button {
     background-color: transparent;
     border: 1px solid var(--color-accent);
@@ -134,7 +138,7 @@ a:hover {
     transform: scale(1.2);
 }
 
-/*Projects Section Layout Grid Row 4, Col 1/5*/
+/*Projects Section*/
 .wrapper {
     background-color: var(--color-hero);
     background-image: linear-gradient(var(--color-hero), var(--color-header-footer));
@@ -160,16 +164,19 @@ a:hover {
     padding: 4em 4em;
     margin: 2em 2em;
     text-decoration: none;
-    display: inline-block;
     font-size: 20px;
     border-radius: 4px;
     box-shadow: 0 4px 8px var(--color-cta-buttons) ;
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
+    overflow-wrap: normal;
 }
 #project1:hover{
     background-color: #a59132;
     background-image: linear-gradient(var(--color-accent), var(--color-cta-highlights));
+}
+#project1 .smaller{
+    font-size: .75em;
 }
 
 #project2 {
@@ -180,17 +187,23 @@ a:hover {
     padding: 4em 4em;
     margin: 2em 2em;
     text-decoration: none;
-    display: inline-block;
     font-size: 20px;
     border-radius: 4px;
     box-shadow: 0 4px 8px var(--color-cta-buttons) ;
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
+    overflow-wrap: normal;
 }
 #project2:hover{
-    
     background-color: #a59132;
     background-image: linear-gradient(var(--color-accent), var(--color-cta-highlights));
+}
+#project2:hover a{
+    color: var(--color-hero);
+    text-decoration: underline;
+}
+#project2 .smaller{
+    font-size: .75em;
 }
 
 /* About Me Section*/
@@ -212,6 +225,7 @@ a:hover {
     justify-content:flex-start;
     justify-content: space-around;
     height: 20px; 
+    padding: 2em;
 }
 
 /* About Section Styling - padding, first words larger, maybe grid with some images of other stuff I've made??*/
@@ -224,26 +238,78 @@ a:hover {
 }
 
 /* Media Queries */
+@media screen and (max-width: 1024px) {
+    .nav-bar{
+        flex-direction: row;
+    }
+    .header-container{
+        flex-direction: row;
+    }
+    #projects {
+        flex-direction: row;
+    }
+    #bio{
+        flex-direction: column;
+    }
+    .footer-container{
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav-bar{
+        flex-direction: row;
+    }
+    .header-container{
+        flex-direction: row;
+    }
+    #projects {
+        flex-direction: column;
+    }
+  
+    #bio{
+        flex-direction: column;
+    }
+    .footer-container{
+        flex-direction: row;
+    }
+}
+
 @media screen and (max-width:480px) {
     .nav-bar{
         flex-direction: column;
+        font-size: .75em;
+
     }
     .header-container{
         flex-direction: column;
-        
     }
-    /* .hero-container img{
-        flex-direction: column;
-        width: 60%;
+    #contact-me img{
+        width: 200%;
         height: auto;
-
-    } */
-    .wrapper {
+    }
+    .hero-text h1 {
+        font-size: 200%;
+    }
+    .hero-text p {
+        font-size: 100%;
+    }
+    #projects {
         flex-direction: column;
     }
+    #project1 {
+       font-size: 16px;
+    }
+    #project2 {
+       font-size: 16px;
+    }
+
     #bio{
-        
         flex-direction: column;
+    }
+
+     p{
+        font-size: 16px;
     }
     .footer-container{
         flex-direction: column;

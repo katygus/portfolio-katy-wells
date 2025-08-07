@@ -36,7 +36,6 @@
   background-color: var(--color-hero);
     background-image: linear-gradient var(--color-hero) var(--color-header-footer);
   color: var(--color-white-text);
-  font-family: sans-serif;
   line-height: 2;
   padding: 8%
 }
@@ -53,6 +52,7 @@
 /*Nav Bar Display */
 .nav-bar {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: stretch;
     justify-content: space-evenly;
@@ -86,16 +86,17 @@ a:hover {
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
-    gap: 2em;
+    gap: 11em;
 }
 
 .hero-container img{
-    width: 40%;
+    width: 30%;
     height: auto;
 }
 
 .hero-text{
     width: 80%;
+    flex-direction: column;
 }
 
 .hero-text h1{
@@ -141,18 +142,13 @@ a:hover {
     padding: 4em;  
 }
 #projects {
-    display: flex;
-    justify-content: center;
+   text-align: center;
 }
 #projects-container {
-   /*display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
-   column-gap: 2em;
-   */
    display: flex;
    flex-direction: row;
    justify-content: space-around;
-   
+   flex-wrap: wrap;
 }
 
 /*Project Elements Styling*/
@@ -161,35 +157,57 @@ a:hover {
     border: 1px solid var(--color-accent);
     color: var(--color-white-text);
     text-align: center;
-    padding: 5em 5em;
+    padding: 4em 4em;
     margin: 2em 2em;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px var(--color-cta-buttons) ;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+#project1:hover{
+    background-color: #a59132;
+    background-image: linear-gradient(var(--color-accent), var(--color-cta-highlights));
 }
 
-
 #project2 {
-    background-color: transparent;
+   background-color: transparent;
     border: 1px solid var(--color-accent);
     color: var(--color-white-text);
     text-align: center;
-    padding: 20px;
-    padding: 5em 5em;
+    padding: 4em 4em;
     margin: 2em 2em;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px var(--color-cta-buttons) ;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
 }
-
+#project2:hover{
+    
+    background-color: #a59132;
+    background-image: linear-gradient(var(--color-accent), var(--color-cta-highlights));
+}
 
 /* About Me Section*/
 #bio {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 
 }
 /*Footer Bar Styling*/
 .footer-container {
-    background-color: var(--color-hero      );
+    background-color: var(--color-header-footer);
     color: var(--color-background);
 }
 /* Footer Layout */
 .footer-container .social-links{
     display: flex;
-    justify-content:;
     align-items: stretch;
     justify-content:flex-start;
     justify-content: space-around;
@@ -203,4 +221,31 @@ a:hover {
 /* this link to use social media icons https://www.w3schools.com/howto/howto_css_social_media_buttons.asp */
 .social-links {
     color: var(--color-background)
+}
+
+/* Media Queries */
+@media screen and (max-width:480px) {
+    .nav-bar{
+        flex-direction: column;
+    }
+    .header-container{
+        flex-direction: column;
+        
+    }
+    /* .hero-container img{
+        flex-direction: column;
+        width: 60%;
+        height: auto;
+
+    } */
+    .wrapper {
+        flex-direction: column;
+    }
+    #bio{
+        
+        flex-direction: column;
+    }
+    .footer-container{
+        flex-direction: column;
+    }
 }

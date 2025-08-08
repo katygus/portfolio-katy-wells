@@ -89,21 +89,12 @@ a:hover {
     justify-content: space-between;
     align-items: center;
     gap: 6em;
-    
-
 }
 
-#contact-me {
+.img-and-button{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#contact-me img {
-    width: 100%;
-    height: auto;
-    margin: 20%;
+    
 }
 
 .hero-text{
